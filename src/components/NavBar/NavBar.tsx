@@ -2,7 +2,7 @@ import { Box, ImageListItem, Toolbar, Typography } from "@mui/material";
 import { Icon } from "@iconify/react";
 import { useState } from "react";
 import LayoutMenu from "../../Interface";
-import Buttons from "../Buttons/Buttons";
+import PrimaryButton from "../Buttons/PrimaryButton";
 import Logo from "../../assets/LogoLha.png";
 import CaretIcon from "@iconify-icons/fluent/chevron-down-24-regular";
 
@@ -118,7 +118,7 @@ export default function NavBar() {
             </Typography>
             <Icon icon={CaretIcon} color="#2F3A45" />
           </Box>
-          <Buttons label = "Faire un don"></Buttons>
+          <PrimaryButton label = "Faire un don"></PrimaryButton>
         </Box>
       </Toolbar>
     </Box>

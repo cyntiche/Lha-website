@@ -5,7 +5,7 @@ interface ButtonsProps {
   label: ReactNode;
 }
 
-const Buttons: React.FC<ButtonsProps> = ({ label }) => {
+const SecondaryButton: React.FC<ButtonsProps> = ({ label }) => {
   return (
     <Box
       sx={{
@@ -15,12 +15,12 @@ const Buttons: React.FC<ButtonsProps> = ({ label }) => {
         alignItems: "center",
         gap: "10px",
         borderRadius: "50px",
-        background: "var(--Primary, #A50000)",
+        background: "var(--bachground, #F5F5F5)",
       }}
     >
       <Typography
         sx={{
-          color: "var(--off-white, #FFF)",
+          color: "var(--Titre-active, #333)",
           fontFamily: "Montserrat, sans-serif",
           fontSize: "18px",
           cursor: "pointer",
@@ -34,4 +34,4 @@ const Buttons: React.FC<ButtonsProps> = ({ label }) => {
     </Box>
   );
 };
-export default Buttons;
+export default SecondaryButton;
